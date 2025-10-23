@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshFarm | 首頁</title>
+    <link rel="icon" href="/special-production/assets/freshFarm-Bfr6wN4N.ico">
+  <script type="module" crossorigin src="/special-production/assets/main-Cz0YYeLt.js"></script>
+  <link rel="stylesheet" crossorigin href="/special-production/assets/main-DOk9SRPh.css">
+</head>
+
+<body>
+    <header class="position-relative">
+        <div class="position-absolute w-100 z-2">
+            <div class="nav-box">
+    <div class="container">
+        <div id="nav" class="py-2 py-lg-4 px-3 px-lg-7 navbar-rounded mt-lg-8 bg-white ">
+            <nav 
+                class="navbar navbar-expand-lg header-nav">
+                <div class="container p-0">
+                    <a class="navbar-brand py-0" href="index.html" tabindex="-1" aria-disabled="true">
+                        <img src="data:image/png;base64,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" alt="logo" class="nav-logo object-fit-cover">
+                    </a>
+                    <button class="navbar-toggler border-0 bg-gray-100 p-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header px-3 py-2 p-lg-0">
+                            <a class="offcanvas-title" id="offcanvasNavbarLabel">
+                                <img src="data:image/png;base64,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" alt="logo" class="object-fit-cover"
+                                    style="width: 64px; height: 53px;"></a>
+                            <button type="button" class="btn-close me-0 bg-gray-100" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body px-6 py-6 p-lg-0">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item pe-lg-8 pb-5 pb-lg-0  nav-bottom-line">
+                                    <a class="nav-link text-lg-center p-0" aria-current="page" href="index.html">
+                                        <span class="fs-lg-4 fs-5 fw-bold">首頁</span>
+                                        <p class="text-gray-300 ">Home</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-5 py-lg-0 nav-bottom-line pe-lg-8 ">
+                                    <a class="nav-link text-lg-center  p-0" href="product-list.html">
+                                        <span class="fs-lg-4 fs-5 fw-bold">產地直送</span>
+                                        <p class="text-gray-300">Delivery</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-5 py-lg-0 nav-bottom-line pe-lg-8">
+                                    <a class="nav-link text-lg-center p-0" href="checkout.html">
+                                        <span class="fs-lg-4 fs-5 fw-bold">購物車</span>
+                                        <p class="text-gray-300">Cart</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-5 py-lg-0">
+                                    <!-- 未登入 -->
+                                    <!-- <a class="nav-link text-lg-center  p-0" href="#">
+                                                        <span class="fs-lg-4 fs-5 fw-bold">登入/註冊</span>
+                                                        <p class="text-gray-300">Sign in</p>
+                                                    </a> -->
+                                    <!-- 已登入 -->    
+                                    <div class="nav-link dropdown-toggle p-0 d-flex align-items-center" style="cursor: pointer;"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div>
+                                            <span class="fs-lg-4 fs-5 fw-bold">用戶名稱</span>
+                                            <p class="text-gray-300 text-lg-center">Account</p>
+                                        </div>
+                                        <div class="align-self-center d-lg-none ms-auto">
+                                            <span class="material-icons ">
+                                                keyboard_arrow_right
+                                            </span>
+                                        </div>
+                                    </div>    
+                                    <ul class="dropdown-menu dropdown-menu-end border-0 rounded-3 shadow mt-lg-6 p-4">
+                                        <h6 class="text-primary-400 mb-3 dropdown-top-line pt-4">會員中心</h6>
+                                        <li><a class="dropdown-item  me-2 mb-3 mb-lg-1" href="#"><span
+                                                    class="material-icons align-bottom me-1">
+                                                    account_circle
+                                                </span>我的帳戶</a>
+        
+                                        </li>
+                                        <li><a class="dropdown-item  me-2 mb-3 mb-lg-1" href="#"><span
+                                                    class="material-icons align-bottom me-1">
+                                                    description
+                                                </span>訂單管理</a></li>
+                                        <li><a class="dropdown-item  me-2 mb-3 mb-lg-1" href="#"><span
+                                                    class="material-icons align-bottom me-1">
+                                                    favorite_border
+                                                </span>收藏清單 </a></li>
+                                        <li><a class="dropdown-item " href="#"><span class="material-icons align-bottom me-1">
+                                                    settings
+                                                </span>個人資料設定</a></li>
+                                    </ul>    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>    
+            </nav>
+        </div>
+    </div>
+</div>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper header-swiper"
+            data-aos="fade-zoom-in"
+        >
+            <div class="swiper-wrapper pt-69 pt-lg-0">
+                <div class="swiper-slide">
+                    <div class="banner-1 position-relative">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark z-1"
+                            style="--bs-bg-opacity: 0.3;">
+                        </div>
+                        <div class="container position-relative z-2">
+                            <div>
+                                <div class="d-flex flex-column flex-lg-row">
+                                    <h4 class="text-primary-100 fs-lg-1 mb-lg-4 mb-1">
+                                        FreshFarm
+                                    </h4>
+                                    <h4 class="text-white fs-lg-1 mb-3 text-nowrap">
+                                        從產地到餐桌的直線距離
+                                    </h4>
+                                </div>
+                                <h5 class="fs-lg-2 text-white mb-lg-8 mb-6">
+                                    把產地的鮮活，直送你家
+                                </h5>
+                                <div class="w-450 position-relative">
+                                    <input type="text" class="form-control  py-5 px-4" placeholder="請輸入商品名稱…"
+                                        aria-label="Search">
+                                    <span class="position-absolute end-0 m-1 py-4 px-3 top-0 material-icons bg-white"
+                                        style="cursor:pointer" id="search" style="font-size: 32px;">search
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="banner-2 position-relative">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark z-1"
+                            style="--bs-bg-opacity: 0.3;">
+                        </div>
+                        <div class="container position-relative z-2">
+                            <h4 class="fs-lg-1 text-white mb-lg-4 mb-3">
+                                與在地同行，品嚐土地的真味
+                            </h4>
+                            <h5 class="fs-lg-2 text-white mb-lg-8 mb-6">
+                                讓每一口，都有個好故事
+                            </h5>
+                            <div class="w-450 position-relative">
+                                <input type="text" class="form-control  py-5 px-4" placeholder="請輸入商品名稱…"
+                                    aria-label="Search">
+                                <span class="position-absolute end-0 m-1 py-4 px-3 top-0 material-icons bg-white"
+                                    style="cursor:pointer" id="search" style="font-size: 32px;">search
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="banner-3 position-relative">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark z-1"
+                            style="--bs-bg-opacity: 0.3;">
+                        </div>
+                        <div class="container position-relative z-2">
+                            <h4 class="fs-lg-1 text-white mb-lg-4 mb-3">
+                                今日採收，明日餐桌
+                            </h4>
+                            <h5 class="fs-lg-2 text-white mb-lg-8 mb-6">
+                                看得見的產地，吃得到的安心
+                            </h5>
+                            <div class="w-450 position-relative">
+                                <input type="text" class="form-control  py-5 px-4" placeholder="請輸入商品名稱…"
+                                    aria-label="Search">
+                                <span class="position-absolute end-0 m-1 py-4 px-3 top-0 material-icons bg-white"
+                                    style="cursor:pointer" id="search" style="font-size: 32px;">search
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- decorate -->
+        <div class="decorate position-absolute bottom-0 z-1 w-100"></div>
+    </header>
+    <main>
+        <!-- 時令直送 -->
+        <section class="container bg-body py-8 py-lg-11">
+            <!-- 時令直送輪播圖 -->
+            <div class="swiper2 position-relative">
+                <div class="d-lg-flex align-items-lg-end justify-content-lg-between mb-7 mb-lg-9"
+                data-aos="fade-up"
+                >
+                    <div class="indexSection-title position-relative mb-7 mb-lg-0">
+                        <span class="badge rounded-pill fs-6 bg-primary-300 mb-2">時令直送</span>
+                        <h2 class="fs-lg-1 fs-4 text-black mb-2">當季限定&nbsp;強力推薦</h2>
+                        <h3 class="fs-lg-5 fs-6 text-gray-400 fw-normal">支持在地，享受最新鮮的台灣味</h3>
+                    </div>
+                    <div class="d-flex">
+                        <!-- prev -->
+                        <div class="swiper-button-prev-custom mt-0 position-static w-auto h-auto text-gray-400 rounded-4 bg-gray-100 p-3 me-6"
+                            style="cursor: pointer">
+                            <span class="material-icons fs-lg-2">
+                                arrow_back
+                            </span>
+                        </div>
+                        <!-- next -->
+                        <div class="swiper-button-next-custom mt-0 position-static w-auto h-auto text-gray-400 rounded-4 bg-gray-100 p-3"
+                            style="cursor: pointer">
+                            <span class="material-icons fs-lg-2">
+                                arrow_forward
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-wrapper d-flex align-items-center"
+                data-aos="fade-up"
+                data-aos-delay="400"
+                >
+                    <!-- 嚴選大樹老欉玉荷包 -->
+                    <div class="swiper-slide">
+                        <div class="card product-card border-0 h-100 w-100 position-relative" style="max-width: 416px;">
+    <div class="position-relative">
+        <a href="#" type="button"
+            class="certify-link fw-medium position-absolute top-0  badge rounded-pill bg-primary-100
+            text-primary fs-6 m-4 px-2 py-1 d-flex justify-content-center align-items-center"
+            >
+            <img class="me-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE8SURBVHgBrZJNSsNAFMffmzSu60rc1b3oCCIu0xt4hCp1o8UmJxBP0JQquLAaT1Bc6a5rBTH1BF3qLq7tzHNeJCUlU0igfxjmI/P7530MwCrV7kgPKsrJFi1fNhyi0f7hZvL++jWpZNA6k9IFeiaAhhlHewcb6x9v3y9lDDBbnJxLXwjqEWF/eB377c62B+hcmk/SjHoRpeBu8BmKbHt/E4daY8Dw6cVO18Bjc+zZYf4z7vIs8ofahYhrYaIIoaQWDKIwThxFPaggAYXQ0rDnMkVNgLAJmgKbQc1yVs/DShl4DRJX4QOVicBcmhZhGnOL8/c00Y89BaLHdNZ0tQxmqZkIrQazmohSA4HdZTC/leg2nloNXE0jTkP/p2GF+a1k+2INND2pX2wOB5MtDXhMSH3TmYhn7kYeXon+ALcyiPbfhe0fAAAAAElFTkSuQmCC" alt="安心認證icon圖示">
+            安心認證
+        </a>
+        <img src='/special-production/assets/index-Image-CJVTXw4_.jpg' class="card-img-top" alt="商品圖片">
+        <button type="button" class="position-absolute bottom-0 end-0 border-0 rounded-circle bg-white p-3 m-4"
+            onclick="toggleFavorite(this)">
+            <span class="material-icons fs-2 d-block favorite-icon text-gray-400">favorite_border</span>
+        </button>
+    </div>
+
+    <div class="card-body d-flex flex-column">
+        <h6 class="text-primary-400 mb-1">
+            
+        </h6>
+        <h5 class="card-title fs-lg-5 text-truncate">
+            嚴選大樹老欉玉荷包
+        </h5>
+        <a href="product.html" class="card-text text-gray-300 multi-line-truncate mb-3 stretched-link">
+            玉荷包、黑葉等品種在夏季上市，果肉Q彈甜中帶酸，風玉荷包、黑葉等玉荷包、黑葉等品種在夏季上市，果肉Q彈甜中帶酸，風玉荷包、黑葉等
+        </a>
+        <div class="mb-3 mt-auto">
+            <span class=" fs-5 fw-bold text-secondary-300 ">
+                NT$ 683
+            </span>
+            <del class="text-gray-300  ms-2">
+                NT$ 729
+            </del>
+            <span class="mx-1 text-gray-300 ">
+                /
+            </span>
+            <span class="text-gray-300 ">
+                600g
+            </span>
+        </div>
+
+
+        <div class="d-flex gap-3">
+            
+
+                <button type="button" class="btn btn-primary-300 text-white fw-bold flex-grow-1">加入購物車</button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    /* 切換愛心JS */
+    function toggleFavorite(button) {
+        const icon = button.querySelector('.favorite-icon');
+        const current = icon.textContent.trim();
+
+        if (current === 'favorite_border') {
+            icon.textContent = 'favorite';
+            icon.classList.remove('text-gray-400');
+            icon.classList.add('text-secondary-300');
+        } else {
+            icon.textContent = 'favorite_border';
+            icon.classList.remove('text-secondary-300');
+            icon.classList.add('text-gray-400');
+        }
+    }
+</script>                    </div>
+                    <!-- 有機綠竹筍(特級)4台 -->
+                    <div class="swiper-slide">
+                        <div class="card product-card border-0 h-100 w-100 position-relative" style="max-width: 416px;">
+    <div class="position-relative">
+        <a href="#" type="button"
+            class="certify-link fw-medium position-absolute top-0  badge rounded-pill bg-primary-100
+            text-primary fs-6 m-4 px-2 py-1 d-flex justify-content-center align-items-center"
+            >
+            <img class="me-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE8SURBVHgBrZJNSsNAFMffmzSu60rc1b3oCCIu0xt4hCp1o8UmJxBP0JQquLAaT1Bc6a5rBTH1BF3qLq7tzHNeJCUlU0igfxjmI/P7530MwCrV7kgPKsrJFi1fNhyi0f7hZvL++jWpZNA6k9IFeiaAhhlHewcb6x9v3y9lDDBbnJxLXwjqEWF/eB377c62B+hcmk/SjHoRpeBu8BmKbHt/E4daY8Dw6cVO18Bjc+zZYf4z7vIs8ofahYhrYaIIoaQWDKIwThxFPaggAYXQ0rDnMkVNgLAJmgKbQc1yVs/DShl4DRJX4QOVicBcmhZhGnOL8/c00Y89BaLHdNZ0tQxmqZkIrQazmohSA4HdZTC/leg2nloNXE0jTkP/p2GF+a1k+2INND2pX2wOB5MtDXhMSH3TmYhn7kYeXon+ALcyiPbfhe0fAAAAAElFTkSuQmCC" alt="安心認證icon圖示">
+            安心認證
+        </a>
+        <img src='/special-production/assets/index-Image-1-CpeQ2XJm.jpg' class="card-img-top" alt="商品圖片">
+        <button type="button" class="position-absolute bottom-0 end-0 border-0 rounded-circle bg-white p-3 m-4"
+            onclick="toggleFavorite(this)">
+            <span class="material-icons fs-2 d-block favorite-icon text-gray-400">favorite_border</span>
+        </button>
+    </div>
+
+    <div class="card-body d-flex flex-column">
+        <h6 class="text-primary-400 mb-1">
+            
+        </h6>
+        <h5 class="card-title fs-lg-5 text-truncate">
+            有機綠竹筍(特級)4台
+        </h5>
+        <a href="product.html" class="card-text text-gray-300 multi-line-truncate mb-3 stretched-link">
+            夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美
+        </a>
+        <div class="mb-3 mt-auto">
+            <span class=" fs-5 fw-bold text-secondary-300 ">
+                NT$ 790
+            </span>
+            <del class="text-gray-300  ms-2">
+                NT$ 836
+            </del>
+            <span class="mx-1 text-gray-300 ">
+                /
+            </span>
+            <span class="text-gray-300 ">
+                500g
+            </span>
+        </div>
+
+
+        <div class="d-flex gap-3">
+            
+
+                <button type="button" class="btn btn-primary-300 text-white fw-bold flex-grow-1">加入購物車</button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    /* 切換愛心JS */
+    function toggleFavorite(button) {
+        const icon = button.querySelector('.favorite-icon');
+        const current = icon.textContent.trim();
+
+        if (current === 'favorite_border') {
+            icon.textContent = 'favorite';
+            icon.classList.remove('text-gray-400');
+            icon.classList.add('text-secondary-300');
+        } else {
+            icon.textContent = 'favorite_border';
+            icon.classList.remove('text-secondary-300');
+            icon.classList.add('text-gray-400');
+        }
+    }
+</script>                    </div>
+                    <!-- 拉拉山洪家水蜜桃 -->
+                    <div class="swiper-slide">
+                        <div class="card product-card border-0 h-100 w-100 position-relative" style="max-width: 416px;">
+    <div class="position-relative">
+        <a href="#" type="button"
+            class="certify-link fw-medium position-absolute top-0  badge rounded-pill bg-primary-100
+            text-primary fs-6 m-4 px-2 py-1 d-flex justify-content-center align-items-center"
+            >
+            <img class="me-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE8SURBVHgBrZJNSsNAFMffmzSu60rc1b3oCCIu0xt4hCp1o8UmJxBP0JQquLAaT1Bc6a5rBTH1BF3qLq7tzHNeJCUlU0igfxjmI/P7530MwCrV7kgPKsrJFi1fNhyi0f7hZvL++jWpZNA6k9IFeiaAhhlHewcb6x9v3y9lDDBbnJxLXwjqEWF/eB377c62B+hcmk/SjHoRpeBu8BmKbHt/E4daY8Dw6cVO18Bjc+zZYf4z7vIs8ofahYhrYaIIoaQWDKIwThxFPaggAYXQ0rDnMkVNgLAJmgKbQc1yVs/DShl4DRJX4QOVicBcmhZhGnOL8/c00Y89BaLHdNZ0tQxmqZkIrQazmohSA4HdZTC/leg2nloNXE0jTkP/p2GF+a1k+2INND2pX2wOB5MtDXhMSH3TmYhn7kYeXon+ALcyiPbfhe0fAAAAAElFTkSuQmCC" alt="安心認證icon圖示">
+            安心認證
+        </a>
+        <img src='/special-production/assets/index-Image-2-Bs6tiDcJ.jpg' class="card-img-top" alt="商品圖片">
+        <button type="button" class="position-absolute bottom-0 end-0 border-0 rounded-circle bg-white p-3 m-4"
+            onclick="toggleFavorite(this)">
+            <span class="material-icons fs-2 d-block favorite-icon text-gray-400">favorite_border</span>
+        </button>
+    </div>
+
+    <div class="card-body d-flex flex-column">
+        <h6 class="text-primary-400 mb-1">
+            
+        </h6>
+        <h5 class="card-title fs-lg-5 text-truncate">
+            拉拉山洪家水蜜桃
+        </h5>
+        <a href="product.html" class="card-text text-gray-300 multi-line-truncate mb-3 stretched-link">
+            水蜜桃主要產於高山地區，因為氣候涼爽、日夜溫差大，使得果實能慢慢成熟，累積出豐富的甜度與香氣。其果肉細緻柔嫩，色澤粉嫩誘人，咬下一口時多汁滑順，帶有獨特的清甜芳香。
+        </a>
+        <div class="mb-3 mt-auto">
+            <span class=" fs-5 fw-bold text-secondary-300 ">
+                NT$ 710
+            </span>
+            <del class="text-gray-300  ms-2">
+                NT$ 760
+            </del>
+            <span class="mx-1 text-gray-300 ">
+                /
+            </span>
+            <span class="text-gray-300 ">
+                800g
+            </span>
+        </div>
+
+
+        <div class="d-flex gap-3">
+            
+
+                <button type="button" class="btn btn-primary-300 text-white fw-bold flex-grow-1">加入購物車</button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    /* 切換愛心JS */
+    function toggleFavorite(button) {
+        const icon = button.querySelector('.favorite-icon');
+        const current = icon.textContent.trim();
+
+        if (current === 'favorite_border') {
+            icon.textContent = 'favorite';
+            icon.classList.remove('text-gray-400');
+            icon.classList.add('text-secondary-300');
+        } else {
+            icon.textContent = 'favorite_border';
+            icon.classList.remove('text-secondary-300');
+            icon.classList.add('text-gray-400');
+        }
+    }
+</script>                    </div>
+                    <!-- 有機綠竹筍(特級)4台 -->
+                    <div class="swiper-slide">
+                        <div class="card product-card border-0 h-100 w-100 position-relative" style="max-width: 416px;">
+    <div class="position-relative">
+        <a href="#" type="button"
+            class="certify-link fw-medium position-absolute top-0  badge rounded-pill bg-primary-100
+            text-primary fs-6 m-4 px-2 py-1 d-flex justify-content-center align-items-center"
+            >
+            <img class="me-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE8SURBVHgBrZJNSsNAFMffmzSu60rc1b3oCCIu0xt4hCp1o8UmJxBP0JQquLAaT1Bc6a5rBTH1BF3qLq7tzHNeJCUlU0igfxjmI/P7530MwCrV7kgPKsrJFi1fNhyi0f7hZvL++jWpZNA6k9IFeiaAhhlHewcb6x9v3y9lDDBbnJxLXwjqEWF/eB377c62B+hcmk/SjHoRpeBu8BmKbHt/E4daY8Dw6cVO18Bjc+zZYf4z7vIs8ofahYhrYaIIoaQWDKIwThxFPaggAYXQ0rDnMkVNgLAJmgKbQc1yVs/DShl4DRJX4QOVicBcmhZhGnOL8/c00Y89BaLHdNZ0tQxmqZkIrQazmohSA4HdZTC/leg2nloNXE0jTkP/p2GF+a1k+2INND2pX2wOB5MtDXhMSH3TmYhn7kYeXon+ALcyiPbfhe0fAAAAAElFTkSuQmCC" alt="安心認證icon圖示">
+            安心認證
+        </a>
+        <img src='/special-production/assets/index-Image-1-CpeQ2XJm.jpg' class="card-img-top" alt="商品圖片">
+        <button type="button" class="position-absolute bottom-0 end-0 border-0 rounded-circle bg-white p-3 m-4"
+            onclick="toggleFavorite(this)">
+            <span class="material-icons fs-2 d-block favorite-icon text-gray-400">favorite_border</span>
+        </button>
+    </div>
+
+    <div class="card-body d-flex flex-column">
+        <h6 class="text-primary-400 mb-1">
+            
+        </h6>
+        <h5 class="card-title fs-lg-5 text-truncate">
+            有機綠竹筍(特級)4台
+        </h5>
+        <a href="product.html" class="card-text text-gray-300 multi-line-truncate mb-3 stretched-link">
+            夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美
+        </a>
+        <div class="mb-3 mt-auto">
+            <span class=" fs-5 fw-bold text-secondary-300 ">
+                NT$ 790
+            </span>
+            <del class="text-gray-300  ms-2">
+                NT$ 836
+            </del>
+            <span class="mx-1 text-gray-300 ">
+                /
+            </span>
+            <span class="text-gray-300 ">
+                500g
+            </span>
+        </div>
+
+
+        <div class="d-flex gap-3">
+            
+
+                <button type="button" class="btn btn-primary-300 text-white fw-bold flex-grow-1">加入購物車</button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    /* 切換愛心JS */
+    function toggleFavorite(button) {
+        const icon = button.querySelector('.favorite-icon');
+        const current = icon.textContent.trim();
+
+        if (current === 'favorite_border') {
+            icon.textContent = 'favorite';
+            icon.classList.remove('text-gray-400');
+            icon.classList.add('text-secondary-300');
+        } else {
+            icon.textContent = 'favorite_border';
+            icon.classList.remove('text-secondary-300');
+            icon.classList.add('text-gray-400');
+        }
+    }
+</script>                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 商品分類 -->
+        <section class="bg-wrapper">
+            <div class="product-bk header pt-8 pb-7 pt-lg-11 pb-lg-9">
+                <div class="box">
+                    <div class="container">
+                        <div class="indexSection-title position-relative"
+                        data-aos="fade-up"
+                        >
+                            <span class="badge rounded-pill fs-6 bg-primary-300 mb-2">商品分類</span>
+                            <h2 class="fs-lg-1 fs-4 text-black mb-2">您的餐桌&nbsp;是小農最好的舞台</h2>
+                            <h3 class="fs-lg-5 fs-6 text-gray-400 fw-normal">最簡單的選擇，最純粹的美味</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-bk body pb-8 pb-lg-11">
+                <div class="box">
+                    <div class="container">                    
+                        <div class="card bg-transparent border-0 product-categories">
+                            <!-- 當季蔬果 -->
+                            <div class="row align-items-lg-center mb-6 mb-lg-14"
+                            data-aos="fade-up"
+                            data-aos-delay="400"
+                            >
+                                <div class="col-md-6">
+                                    <a href="#" class="image-link-fade">
+                                        <picture>
+                                            <source srcset="/special-production/assets/index-Image-3-CHQQuYEe.jpg" media="(min-width: 992px)">
+                                            <img src="/special-production/assets/index-mobile-Image-3-C-RxMEVW.jpg" alt="當季蔬果"
+                                                class="img-fluid mb-3 mb-lg-0">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="col-md-5 offset-lg-1">
+                                    <div class="card-body position-relative p-2 p-lg-4">
+                                        <h4 class="card-title fs-lg-2 text-primary-400 mb-1">當季蔬果</h4>
+                                        <h6 class="card-text fs-lg-5 mb-3 mb-lg-6">
+                                            <small class="text-gray-300">In Season</small>
+                                        </h6>
+                                        <p class="card-text fs-lg-5">
+                                            從春日的翠綠葉菜到夏日的甜美瓜果，從秋季的豐收根莖到冬日的溫暖果實，我們與全台堅持友善耕作的小農合作，確保每一口都是當令的鮮甜與營養。</p>
+                                        <img src="/special-production/assets/index-apple-BHVuzprE.png" alt="當季蔬果"
+                                            class="position-absolute z-2 pc-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 現撈海鮮 -->
+                            <div class="row align-items-lg-center mb-6 mb-lg-14"
+                            data-aos="fade-up"
+                            data-aos-delay="500"
+                            >
+                                <div class="col-md-6 order-lg-2 offset-lg-1">
+                                    <a href="#" class="image-link-fade">
+                                        <picture>
+                                            <source srcset="/special-production/assets/index-Image-5-DBtrKgDP.jpg" media="(min-width: 992px)">
+                                            <img src="/special-production/assets/index-mobile-Image-5-C2oSAizK.jpg" alt="現撈海鮮"
+                                                class="img-fluid mb-3 mb-lg-0 mirror">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="col-md-5 order-lg-1">
+                                    <div class="card-body position-relative p-2 p-lg-4">
+                                        <h4 class="card-title fs-lg-2 text-primary-400 mb-1">現撈海鮮</h4>
+                                        <h6 class="card-text fs-lg-5 mb-3 mb-lg-6">
+                                            <small class="text-gray-300">Fresh Catch</small>
+                                        </h6>
+                                        <p class="card-text fs-lg-5">
+                                            我們與在地漁民緊密合作，確保每一隻蝦都是當日現撈，並以最嚴謹的保鮮技術，鎖住最原始的海洋風味。每項商品都附有詳細的捕撈日期、產地資訊與檢驗報告，讓您吃得安心又放心。
+                                        </p>
+                                        <img src="/special-production/assets/index-ezoiwana-KtAH2dm7.png" alt="現撈海鮮"
+                                            class="position-absolute z-2 pc-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 優質肉蛋 -->
+                            <div class="row align-items-lg-center mb-6 mb-lg-14"
+                            data-aos="fade-up"
+                            data-aos-delay="600"
+                            >
+                                <div class="col-md-6">
+                                    <a href="#" class="image-link-fade">
+                                        <picture>
+                                            <source srcset="/special-production/assets/index-Image-4-k_-RCysL.jpg" media="(min-width: 992px)">
+                                            <img src="/special-production/assets/index-mobile-Image-4-dMC4h0z-.jpg" alt="優質肉蛋"
+                                                class="img-fluid mb-3 mb-lg-0">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="col-md-5 offset-lg-1">
+                                    <div class="card-body position-relative p-2 p-lg-4">
+                                        <h4 class="card-title fs-lg-2 text-primary-400 mb-1">優質肉蛋</h4>
+                                        <h6 class="card-text fs-lg-5 mb-3 mb-lg-6">
+                                            <small class="text-gray-300">Prime Cuts</small>
+                                        </h6>
+                                        <p class="card-text fs-lg-5">
+                                            從口感鮮美的自然豬肉、肉質紮實的放山雞，到營養豐富的機能蛋，我們確保每一份肉品與蛋品都符合嚴格的品質標準。您可以透過平台追溯飼養環境、飼料來源以及相關認證。</p>
+                                        <img src="/special-production/assets/index-egg-C6XWNn_U.png" alt="優質肉蛋"
+                                            class="position-absolute z-2 pc-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 在地加工品 -->
+                            <div class="row align-items-lg-center"
+                            data-aos="fade-up"
+                            data-aos-delay="700"
+                            >
+                                <div class="col-md-6 order-lg-2 offset-lg-1">
+                                    <a href="#" class="image-link-fade">
+                                        <picture>
+                                            <source srcset="/special-production/assets/index-Image-6-so6EBZ_M.jpg" media="(min-width: 992px)">
+                                            <img src="/special-production/assets/index-mobile-Image-6-Bx8FthH1.jpg" alt="在地加工品"
+                                                class="img-fluid mb-3 mb-lg-0 mirror">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="col-md-5 order-lg-1">
+                                    <div class="card-body position-relative p-2 p-lg-4">
+                                        <h4 class="card-title fs-lg-2 text-primary-400 mb-1">在地加工品</h4>
+                                        <h6 class="card-text fs-lg-5 mb-3 mb-lg-6">
+                                            <small class="text-gray-300">Local Picks</small>
+                                        </h6>
+                                        <p class="card-text fs-lg-5">
+                                            從手工熬煮的天然果醬、陽光曬製的健康果乾，到遵循古法製作的在地米麵、特色醬料，每一項產品都來自在地小農的用心。您可以深入了解製作過程、原料來源與品牌故事，感受產品背後的溫度與堅持。
+                                        </p>
+                                        <img src="/special-production/assets/index-tsukemono-CIqzmqL5.png" alt="在地加工品"
+                                            class="position-absolute z-2 pc-icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 小農專訪 -->
+        <section class="interview position-relative">
+            <div class="decorate top position-absolute top-0 z-1 w-100"></div>
+<div class="decorate position-absolute bottom-0 z-1 w-100"></div>                <div class="container py-8 py-lg-13">
+                    <div class="indexSection-title position-relative mb-7 mb-lg-9"
+                    data-aos="fade-up"
+                    >
+                        <span class="badge rounded-pill fs-6 bg-primary-300 mb-2">小農專訪</span>
+                        <h2 class="fs-lg-1 fs-4 text-black mb-2">探尋台灣風土的真摯感動</h2>
+                        <h3 class="fs-lg-5 fs-6 text-gray-400 fw-normal">聆聽小農心聲，故事與新鮮同行</h3>
+                    </div>
+                    <div class="row mb-4 mb-lg-14">
+                        <div class="col-md-4 align-self-md-center"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                        >
+                            <picture>
+                                <source srcset="/special-production/assets/index-Image-7-Dhaw-yBS.jpg" media="(min-width: 992px)">
+                                <img src="/special-production/assets/index-mobile-Image-7-BwB9ORAy.jpg" alt="小農專訪"
+                                    class="img-fluid mb-3 mb-lg-0 rounded-3">
+                            </picture>
+                        </div>
+                        <div class="col-md-7 offset-lg-1"
+                        data-aos="fade-up"
+                        data-aos-delay="500"
+                        >
+                            <div class="card-body p-4">
+                                <h6 class="card-text fs-lg-4 mb-1 mb-lg-2">
+                                    <small class="text-primary-400">海港的堅持</small>
+                                </h6>
+                                <h5 class="card-title fs-lg-2 mb-3 mb-lg-6">阿海的現撈野生軟絲</h5>
+                                <p class="card-text fs-lg-5">
+                                    清晨四點，天色微亮，阿海哥的漁船已經破浪而出。身為一名資深漁民，他深知大海的脾氣與慷慨。阿海哥堅持以一支釣或定置網等友善漁法捕撈，不過度捕撈，只為維護海洋生態的永續。他說：「我們只捕當季、當令的魚貨，當天捕上岸的野生軟絲，眼睛清澈、肉質Q彈，那才是真正的鮮。」當他將一箱箱閃著銀光的現撈漁獲送上岸，你就能感受到那份來自大海，最新鮮、最有活力的生命力。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- 為何選擇 FreshFarm -->
+        <section class="brand-concept position-relative">
+            <div class="decorate top position-absolute top-0 z-1 w-100"></div>
+<div class="decorate position-absolute bottom-0 z-1 w-100"></div>                <div class="container py-8 py-lg-13">
+                    <div class="indexSection-title position-relative mb-7 mb-lg-9"
+                    data-aos="fade-up"
+                    >
+                        <span class="badge rounded-pill fs-6 bg-primary-300 mb-2">品牌理念</span>
+                        <h2 class="fs-lg-1 fs-4 text-black mb-2">為何選擇&nbsp;FreshFarm</h2>
+                        <h3 class="fs-lg-5 fs-6 text-gray-400 fw-normal">從產地到餐桌，選擇一份安心與用心</h3>
+                    </div>
+                    <div class="row row-cols-1 row-cols-lg-3 g-4">
+                        <div class="col"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                        >
+                            <div class="card h-100 mb-6 mb-lg-0 border-0 p-6">
+                                <picture class="text-center mb-6">
+                                    <img src="/special-production/assets/index-vacuumcar-nE1nOjeo.png" alt="產地直送的極致新鮮">
+                                </picture>
+                                <div class="card-body p-0 text-center">
+                                    <h5 class="card-title text-primary-400 mb-4">產地直送的極致新鮮</h5>
+                                    <p class="card-text text-gray-400">我們直接從產地將食材送到您手中，確保您享用的是最當季、最新鮮的美味。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col"
+                        data-aos="fade-up"
+                        data-aos-delay="500"
+                        >
+                            <div class="card h-100 mb-6 mb-lg-0 border-0 p-6">
+                                <picture class="text-center mb-6">
+                                    <img src="/special-production/assets/index-vegetableset-1lthI2K2.png" alt="安心透明的食材來源">
+                                </picture>
+                                <div class="card-body p-0 text-center">
+                                    <h5 class="card-title text-primary-400 mb-4">安心透明的食材來源</h5>
+                                    <p class="card-text text-gray-400">每一項商品都有清楚產地故事、農友介紹與完整認證資訊，讓您吃得安心又放心。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col"
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                        >
+                            <div class="card h-100 mb-6 mb-lg-0 border-0 p-6">
+                                <picture class="text-center mb-6">
+                                    <img src="/special-production/assets/index-compost-JMkOaq8i.png" alt="在地小農與永續農業">
+                                </picture>
+                                <div class="card-body p-0 text-center">
+                                    <h5 class="card-title text-primary-400 mb-4">在地小農與永續農業</h5>
+                                    <p class="card-text text-gray-400">您的每一次消費，都直接幫助辛勤耕耘的在地農友促進台灣農業的永續發。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer text-center py-lg-9 py-8 bg-accent"
+    data-aos="fade-zoom-in"
+>
+    <div class="container">
+        <!-- footer logo -->
+        <h2 class="mb-6">
+            <a href="#">
+                <img src="data:image/png;base64,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" alt="logo" class="logo">
+            </a>
+        </h2>
+        <!-- footer nav -->         
+        <ul class="nav d-lg-flex d-block justify-content-lg-center mb-6 footer-nav">
+            <li class="nav-item py-lg-2 mb-4 mb-lg-0">
+                <a class="nav-link fw-bold py-lg-0 pe-lg-6 px-2 " href="#">
+                    常見問題
+                </a>
+            </li>
+            <li class="nav-item py-lg-2 mb-4 mb-lg-0">
+                <a class="nav-link fw-bold py-lg-0 px-lg-6 px-2" href="#">
+                    聯絡我們
+                </a>
+            </li>
+            <li class="nav-item py-lg-2 mb-4 mb-lg-0">
+                <a class="nav-link fw-bold py-lg-0 px-lg-6 px-2" href="#">
+                    隱私權政策
+                </a>
+            </li>
+            <li class="nav-item py-lg-2">
+                <a class="nav-link fw-bold py-lg-0 ps-lg-6 px-2" href="#">
+                    關於我們
+                </a>
+            </li>
+        </ul>
+        <!-- service hours -->      
+        <div class="mb-6 text-white">
+            <p class="fs-7 fs-lg-6 mb-2"> 服務時間：週一至周五 AM <time>09:00</time> - <time>12:30</time>｜PM <time>13:30</time> - <time>17:30</time></p>
+            <p class="fs-7 fs-lg-6">連絡電話：0000-000-000</p>
+        </div>
+        <!-- copyright -->
+        <p class="fs-7 fs-lg-6 text-gray-200">
+            Copyright&nbsp;&copy;&nbsp;FreshFarm 2025 All Rights Reserved.
+        </p>
+    </div>
+</footer>
+</body>
+
+</html>

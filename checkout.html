@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshFarm | 購物車</title>
+    <link rel="icon" href="/special-production/assets/freshFarm-Bfr6wN4N.ico">
+    <script type="module" crossorigin src="/special-production/assets/main-Cz0YYeLt.js"></script>
+    <link rel="stylesheet" crossorigin href="/special-production/assets/main-DOk9SRPh.css">
+  </head>
+
+  <body>
+    <div class="nav-box">
+    <div class="container">
+        <div id="nav" class="py-2 py-lg-4 px-3 px-lg-7 navbar-rounded mt-lg-8 bg-white  nav-shadow ">
+            <nav 
+                class="navbar navbar-expand-lg header-nav">
+                <div class="container p-0">
+                    <a class="navbar-brand py-0" href="index.html" tabindex="-1" aria-disabled="true">
+                        <img src="data:image/png;base64,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" alt="logo" class="nav-logo object-fit-cover">
+                    </a>
+                    <button class="navbar-toggler border-0 bg-gray-100 p-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header px-3 py-2 p-lg-0">
+                            <a class="offcanvas-title" id="offcanvasNavbarLabel">
+                                <img src="data:image/png;base64,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" alt="logo" class="object-fit-cover"
+                                    style="width: 64px; height: 53px;"></a>
+                            <button type="button" class="btn-close me-0 bg-gray-100" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body px-6 py-6 p-lg-0">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item pe-lg-8 pb-5 pb-lg-0  nav-bottom-line">
+                                    <a class="nav-link text-lg-center p-0" aria-current="page" href="index.html">
+                                        <span class="fs-lg-4 fs-5 fw-bold">首頁</span>
+                                        <p class="text-gray-300 ">Home</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-5 py-lg-0 nav-bottom-line pe-lg-8 ">
+                                    <a class="nav-link text-lg-center  p-0" href="product-list.html">
+                                        <span class="fs-lg-4 fs-5 fw-bold">產地直送</span>
+                                        <p class="text-gray-300">Delivery</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-5 py-lg-0 nav-bottom-line pe-lg-8">
+                                    <a class="nav-link text-lg-center p-0" href="checkout.html">
+                                        <span class="fs-lg-4 fs-5 fw-bold">購物車</span>
+                                        <p class="text-gray-300">Cart</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item py-5 py-lg-0">
+                                    <!-- 未登入 -->
+                                    <!-- <a class="nav-link text-lg-center  p-0" href="#">
+                                                        <span class="fs-lg-4 fs-5 fw-bold">登入/註冊</span>
+                                                        <p class="text-gray-300">Sign in</p>
+                                                    </a> -->
+                                    <!-- 已登入 -->    
+                                    <div class="nav-link dropdown-toggle p-0 d-flex align-items-center" style="cursor: pointer;"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div>
+                                            <span class="fs-lg-4 fs-5 fw-bold">用戶名稱</span>
+                                            <p class="text-gray-300 text-lg-center">Account</p>
+                                        </div>
+                                        <div class="align-self-center d-lg-none ms-auto">
+                                            <span class="material-icons ">
+                                                keyboard_arrow_right
+                                            </span>
+                                        </div>
+                                    </div>    
+                                    <ul class="dropdown-menu dropdown-menu-end border-0 rounded-3 shadow mt-lg-6 p-4">
+                                        <h6 class="text-primary-400 mb-3 dropdown-top-line pt-4">會員中心</h6>
+                                        <li><a class="dropdown-item  me-2 mb-3 mb-lg-1" href="#"><span
+                                                    class="material-icons align-bottom me-1">
+                                                    account_circle
+                                                </span>我的帳戶</a>
+        
+                                        </li>
+                                        <li><a class="dropdown-item  me-2 mb-3 mb-lg-1" href="#"><span
+                                                    class="material-icons align-bottom me-1">
+                                                    description
+                                                </span>訂單管理</a></li>
+                                        <li><a class="dropdown-item  me-2 mb-3 mb-lg-1" href="#"><span
+                                                    class="material-icons align-bottom me-1">
+                                                    favorite_border
+                                                </span>收藏清單 </a></li>
+                                        <li><a class="dropdown-item " href="#"><span class="material-icons align-bottom me-1">
+                                                    settings
+                                                </span>個人資料設定</a></li>
+                                    </ul>    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>    
+            </nav>
+        </div>
+    </div>
+</div>
+    <div class="container">
+      <!-- 進度條 -->
+      <div class="d-flex align-items-center justify-content-center">
+        <!-- 確認訂單明細 -->
+        <div class="step-item">
+          <div class="step-circle active">1</div>
+          <p class="step-text">確認訂單明細</p>
+        </div>
+
+        <!-- 線條 -->
+        <div class="step-line"></div>
+
+        <!-- 選擇付款方式 -->
+        <div class="step-item">
+          <div class="step-circle">2</div>
+          <p class="step-text">選擇付款方式</p>
+        </div>
+
+        <!-- 線條 -->
+        <div class="step-line"></div>
+
+        <!-- 完成訂購 -->
+        <div class="step-item">
+          <div class="step-circle">3</div>
+          <p class="step-text">完成訂購</p>
+        </div>
+      </div>
+
+      <!-- 購物車 -->
+      <!-- 電腦樣式 -->
+      <div class="py-8 py-lg-9">
+        <div class="d-none d-lg-block cart-bg">
+          <table class="table table-borderless">
+            <thead>
+              <tr>
+                <th scope="col" style="width: 480px">商品</th>
+                <th scope="col" style="width: 192px">數量</th>
+                <th scope="col" style="width: 192px">單價</th>
+                <th scope="col" style="width: 192px">小計</th>
+                <th scope="col" style="width: 80px">移除</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <img
+                    src="/special-production/assets/checkout-Image-B3XfF2gI.jpg"
+                    alt="嚴選大樹老欉玉荷包禮盒3斤"
+                    class="me-2 rounded-3"
+                  /><span>嚴選大樹老欉玉荷包禮盒3斤</span>
+                </th>
+                <td>
+                  <div class="position-relative d-inline-block">
+                    <input
+                      type="number"
+                      class="form-control text-center"
+                      id="quantity-1"
+                      value="1"
+                    />
+                    <span
+                      class="material-icons position-absolute top-50 start-0 translate-middle-y ms-3 me-2 text-gray-200"
+                      style="cursor: pointer"
+                    >
+                      remove
+                    </span>
+                    <span
+                      class="material-icons position-absolute top-50 end-0 translate-middle-y ms-2 me-3 text-primary-400"
+                      style="cursor: pointer"
+                    >
+                      add
+                    </span>
+                  </div>
+                </td>
+                <td>NT$ 588</td>
+                <td class="fw-bold">NT$ 588</td>
+                <td>
+                  <div class="delete">
+                    <span class="material-icons"> delete </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <img
+                    src="/special-production/assets/checkout-Image-1-Be_BRkRt.jpg"
+                    alt="玉井愛文芒果"
+                    class="me-2 rounded-3"
+                  /><span>玉井愛文芒果</span>
+                </th>
+                <td>
+                  <div class="position-relative d-inline-block">
+                    <input
+                      type="number"
+                      class="form-control text-center"
+                      id="quantity-2"
+                      value="3"
+                    />
+                    <span
+                      class="material-icons position-absolute top-50 start-0 translate-middle-y ms-3 me-2 text-primary-400"
+                      style="cursor: pointer"
+                    >
+                      remove
+                    </span>
+                    <span
+                      class="material-icons position-absolute top-50 end-0 translate-middle-y ms-2 me-3 text-primary-400"
+                      style="cursor: pointer"
+                    >
+                      add
+                    </span>
+                  </div>
+                </td>
+                <td>NT$ 180</td>
+                <td class="fw-bold">NT$ 540</td>
+                <td>
+                  <div class="delete">
+                    <span class="material-icons"> delete </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <img
+                    src="/special-production/assets/checkout-Image-2-CG-bFDXF.jpg"
+                    alt="有機蜜蘋果"
+                    class="me-2 rounded-3"
+                  /><span>有機蜜蘋果</span>
+                </th>
+                <td>
+                  <div class="position-relative d-inline-block">
+                    <input
+                      type="number"
+                      class="form-control text-center"
+                      id="quantity-3"
+                      value="5"
+                    />
+                    <span
+                      class="material-icons position-absolute top-50 start-0 translate-middle-y ms-3 me-2 text-primary-400"
+                      style="cursor: pointer"
+                    >
+                      remove
+                    </span>
+                    <span
+                      class="material-icons position-absolute top-50 end-0 translate-middle-y ms-2 me-3 text-primary-400"
+                      style="cursor: pointer"
+                    >
+                      add
+                    </span>
+                  </div>
+                </td>
+                <td>NT$ 150</td>
+                <td class="fw-bold">NT$ 750</td>
+                <td>
+                  <div class="delete">
+                    <span class="material-icons"> delete </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <img
+                    src="/special-production/assets/checkout-Image-3-1ZSuZjMc.jpg"
+                    alt="屏東香米"
+                    class="me-2 rounded-3"
+                  /><span>屏東香米</span>
+                </th>
+                <td>
+                  <div class="position-relative d-inline-block">
+                    <input
+                      type="number"
+                      class="form-control text-center"
+                      id="quantity-4"
+                      value="1"
+                    />
+                    <span
+                      class="material-icons position-absolute top-50 start-0 translate-middle-y ms-3 me-2 text-gray-200"
+                      style="cursor: pointer"
+                    >
+                      remove
+                    </span>
+                    <span
+                      class="material-icons position-absolute top-50 end-0 translate-middle-y ms-2 me-3 text-primary-400"
+                      style="cursor: pointer"
+                    >
+                      add
+                    </span>
+                  </div>
+                </td>
+                <td>NT$ 180</td>
+                <td class="fw-bold">NT$ 180</td>
+                <td>
+                  <div class="delete">
+                    <span class="material-icons"> delete </span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 手機樣式 -->
+        <div class="d-lg-none">
+          <div class="cart-bg mb-6">
+            <div class="d-flex align-items-top mb-3">
+              <div>
+                <img
+                  src="/special-production/assets/checkout-Image-B3XfF2gI.jpg"
+                  alt="嚴選大樹老欉玉荷包禮盒3斤"
+                  class="me-3 rounded-3"
+                />
+              </div>
+              <div class="flex-grow-1">
+                <p class="h6 text-primary-400 mb-2">
+                  嚴選大樹老欉玉荷包禮盒3斤
+                </p>
+                <div class="d-flex align-items-center mb-2">
+                  <small class="text-gray-400 pe-4">單價</small>
+                  <span>NT$ 588</span>
+                </div>
+                <div class="d-flex align-items-center">
+                  <small class="text-gray-400 pe-4">小計</small>
+                  <span class="fw-bold">NT$ 588</span>
+                </div>
+              </div>
+              <span
+                class="material-icons text-danger ms-3"
+                style="cursor: pointer"
+                >delete</span
+              >
+            </div>
+            <div class="position-relative d-inline-block w-100">
+              <input
+                type="number"
+                class="form-control text-center"
+                id="quantity-1"
+                value="1"
+              />
+              <span
+                class="material-icons position-absolute top-50 start-0 translate-middle-y ms-3 text-gray-200"
+                style="cursor: pointer"
+              >
+                remove
+              </span>
+              <span
+                class="material-icons position-absolute top-50 end-0 translate-middle-y me-3 text-primary-400"
+                style="cursor: pointer"
+              >
+                add
+              </span>
+            </div>
+          </div>
+          <div class="cart-bg mb-6">
+            <div class="d-flex align-items-top mb-3">
+              <div>
+                <img
+                  src="/special-production/assets/checkout-Image-1-Be_BRkRt.jpg"
+                  alt="玉井愛文芒果"
+                  class="me-3 rounded-3"
+                />
+              </div>
+              <div class="flex-grow-1">
+                <p class="h6 text-primary-400 mb-2">玉井愛文芒果</p>
+                <div class="d-flex align-items-center mb-2">
+                  <small class="text-gray-400 pe-4">單價</small>
+                  <span>NT$ 180</span>
+                </div>
+                <div class="d-flex align-items-center">
+                  <small class="text-gray-400 pe-4">小計</small>
+                  <span class="fw-bold">NT$ 540</span>
+                </div>
+              </div>
+              <span
+                class="material-icons text-danger ms-3"
+                style="cursor: pointer"
+                >delete</span
+              >
+            </div>
+            <div class="position-relative d-inline-block w-100">
+              <input
+                type="number"
+                class="form-control text-center"
+                id="quantity-2"
+                value="3"
+              />
+              <span
+                class="material-icons position-absolute top-50 start-0 translate-middle-y ms-3 text-primary-400"
+                style="cursor: pointer"
+              >
+                remove
+              </span>
+              <span
+                class="material-icons position-absolute top-50 end-0 translate-middle-y me-3 text-primary-400"
+                style="cursor: pointer"
+              >
+                add
+              </span>
+            </div>
+          </div>
+          <div class="cart-bg mb-6">
+            <div class="d-flex align-items-top mb-3">
+              <div>
+                <img
+                  src="/special-production/assets/checkout-Image-2-CG-bFDXF.jpg"
+                  alt="有機蜜蘋果"
+                  class="me-3 rounded-3"
+                />
+              </div>
+              <div class="flex-grow-1">
+                <p class="h6 text-primary-400 mb-2">有機蜜蘋果</p>
+                <div class="d-flex align-items-center mb-2">
+                  <small class="text-gray-400 pe-4">單價</small>
+                  <span>NT$ 150</span>
+                </div>
+                <div class="d-flex align-items-center">
+                  <small class="text-gray-400 pe-4">小計</small>
+                  <span class="fw-bold">NT$ 750</span>
+                </div>
+              </div>
+              <span
+                class="material-icons text-danger ms-3"
+                style="cursor: pointer"
+                >delete</span
+              >
+            </div>
+            <div class="position-relative d-inline-block w-100">
+              <input
+                type="number"
+                class="form-control text-center"
+                id="quantity-3"
+                value="5"
+              />
+              <span
+                class="material-icons position-absolute top-50 start-0 translate-middle-y ms-3 text-primary-400"
+                style="cursor: pointer"
+              >
+                remove
+              </span>
+              <span
+                class="material-icons position-absolute top-50 end-0 translate-middle-y me-3 text-primary-400"
+                style="cursor: pointer"
+              >
+                add
+              </span>
+            </div>
+          </div>
+          <div class="cart-bg mb-6">
+            <div class="d-flex align-items-top mb-3">
+              <div>
+                <img
+                  src="/special-production/assets/checkout-Image-3-1ZSuZjMc.jpg"
+                  alt="屏東香米"
+                  class="me-3 rounded-3"
+                />
+              </div>
+              <div class="flex-grow-1">
+                <p class="h6 text-primary-400 mb-2">屏東香米</p>
+                <div class="d-flex align-items-center mb-2">
+                  <small class="text-gray-400 pe-4">單價</small>
+                  <span>NT$ 180</span>
+                </div>
+                <div class="d-flex align-items-center">
+                  <small class="text-gray-400 pe-4">小計</small>
+                  <span class="fw-bold">NT$ 180</span>
+                </div>
+              </div>
+              <span
+                class="material-icons text-danger ms-3"
+                style="cursor: pointer"
+                >delete</span
+              >
+            </div>
+            <div class="position-relative d-inline-block w-100">
+              <input
+                type="number"
+                class="form-control text-center"
+                id="quantity-4"
+                value="1"
+              />
+              <span
+                class="material-icons position-absolute top-50 start-0 translate-middle-y ms-3 text-gray-200"
+                style="cursor: pointer"
+              >
+                remove
+              </span>
+              <span
+                class="material-icons position-absolute top-50 end-0 translate-middle-y me-3 text-primary-400"
+                style="cursor: pointer"
+              >
+                add
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-8 py-lg-9">
+        <!-- 左側欄 -->
+        <div class="col-lg-7">
+          <!-- 配送方式 -->
+          <div class="bg-gray-50 rounded-4 p-6 mb-6">
+            <h2 class="h4 mb-4 text-primary-400">配送方式</h2>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="ShippingMethod"
+                id="ShippingMethod1"
+                checked
+              />
+              <label class="form-check-label" for="ShippingMethod1">
+                低溫宅配 (運費NT$150，消費滿NT$1,000免運費)
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="ShippingMethod"
+                id="ShippingMethod2"
+              />
+              <label class="form-check-label" for="ShippingMethod2">
+                到店取貨
+              </label>
+            </div>
+          </div>
+          <!-- 收件資訊 -->
+          <div class="bg-gray-50 rounded-4 p-6 mb-6">
+            <h2 class="h4 mb-4 text-primary-400">收件資料</h2>
+            <!-- 收件人姓名&手機號碼 -->
+            <div class="d-lg-flex">
+              <div class="w-100 pe-lg-4 mb-4">
+                <label for="name" class="form-label">收件人姓名</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="王Ｏ明"
+                />
+              </div>
+              <div class="w-100 mb-4">
+                <label for="cellNumber" class="form-label">手機號碼</label>
+                <input
+                  type="text"
+                  class="form-control py-4"
+                  id="cellNumber"
+                  placeholder="0912345678"
+                />
+              </div>
+            </div>
+            <!-- 電子郵件 -->
+            <div class="mb-4">
+              <label for="mail" class="form-label">電子郵件</label>
+              <input
+                type="email"
+                class="form-control"
+                id="mail"
+                placeholder="aaa@gmail.com"
+              />
+            </div>
+            <!-- 收件地址 -->
+            <div class="mb-4">
+              <label for="adress" class="form-label">收件地址</label>
+              <div class="d-flex pb-2">
+                <div class="dropdown w-50 me-2 me-lg-4">
+                  <button
+                    class="form-select text-start py-4"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    臺北市
+                  </button>
+                  <ul class="dropdown-menu w-100">
+                    <li>
+                      <a class="dropdown-item" href="#">臺北市</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">新北市</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">桃園市</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">基隆市</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">新竹縣</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">新竹市</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">宜蘭縣</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">花蓮縣</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">臺東縣</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">臺中市</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">南投縣</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">苗栗縣</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">雲林縣</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">彰化縣</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">臺南市</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">高雄市</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">嘉義縣</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">嘉義市</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">屏東縣</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown w-50">
+                  <button
+                    class="form-select text-start py-4"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    大安區
+                  </button>
+                  <ul class="dropdown-menu w-100">
+                    <li>
+                      <a class="dropdown-item" href="#">中正區</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">大同區</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">中山區</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">松山區</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">大安區</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">萬華區</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">信義區</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">士林區</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">北投區</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">內湖區</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">南港區</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">文山區</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                id="adress"
+                placeholder="詳細地址"
+              />
+            </div>
+            <!-- 郵遞區號 -->
+            <div class="mb-4">
+              <label for="postalCode" class="form-label">郵遞區號</label>
+              <input
+                type="text"
+                class="form-control"
+                id="postalCode"
+                value="106"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- 右側欄 -->
+        <div class="col-lg-5">
+          <!-- 折扣碼 -->
+          <div class="bg-gray-50 rounded-4 p-6 mb-6">
+            <h2 class="h4 mb-4 text-primary-400">折扣碼</h2>
+            <div class="d-flex">
+              <input
+                type="text"
+                class="form-control me-3"
+                placeholder="請輸入折扣代碼"
+              />
+              <button class="btn text-nowrap checkout-btn">使用</button>
+            </div>
+          </div>
+          <!-- 付款金額 -->
+          <div class="bg-gray-50 rounded-4 p-6">
+            <h2 class="h4 mb-4 text-primary-400">付款金額</h2>
+            <div class="d-flex justify-content-between pb-2">
+              <p>商品金額</p>
+              <p class="fw-bold">NT$ 2,058</p>
+            </div>
+            <div class="d-flex justify-content-between pb-2">
+              <p>折扣碼折抵</p>
+              <p class="fw-bold">-NT$ 50</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p>運費</p>
+              <p class="fw-bold">NT$ 0</p>
+            </div>
+            <hr class="border-gray-300" />
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <p>總金額</p>
+              <p class="h3 text-secondary-300">NT$ 2,008</p>
+            </div>
+            <button
+              class="btn w-100 checkout-btn d-flex justify-content-center align-items-center"
+            >
+              前往付款<span class="material-icons fs-6 ms-2">
+                arrow_forward
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer text-center py-lg-9 py-8 bg-accent"
+    data-aos="fade-zoom-in"
+>
+    <div class="container">
+        <!-- footer logo -->
+        <h2 class="mb-6">
+            <a href="#">
+                <img src="data:image/png;base64,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" alt="logo" class="logo">
+            </a>
+        </h2>
+        <!-- footer nav -->         
+        <ul class="nav d-lg-flex d-block justify-content-lg-center mb-6 footer-nav">
+            <li class="nav-item py-lg-2 mb-4 mb-lg-0">
+                <a class="nav-link fw-bold py-lg-0 pe-lg-6 px-2 " href="#">
+                    常見問題
+                </a>
+            </li>
+            <li class="nav-item py-lg-2 mb-4 mb-lg-0">
+                <a class="nav-link fw-bold py-lg-0 px-lg-6 px-2" href="#">
+                    聯絡我們
+                </a>
+            </li>
+            <li class="nav-item py-lg-2 mb-4 mb-lg-0">
+                <a class="nav-link fw-bold py-lg-0 px-lg-6 px-2" href="#">
+                    隱私權政策
+                </a>
+            </li>
+            <li class="nav-item py-lg-2">
+                <a class="nav-link fw-bold py-lg-0 ps-lg-6 px-2" href="#">
+                    關於我們
+                </a>
+            </li>
+        </ul>
+        <!-- service hours -->      
+        <div class="mb-6 text-white">
+            <p class="fs-7 fs-lg-6 mb-2"> 服務時間：週一至周五 AM <time>09:00</time> - <time>12:30</time>｜PM <time>13:30</time> - <time>17:30</time></p>
+            <p class="fs-7 fs-lg-6">連絡電話：0000-000-000</p>
+        </div>
+        <!-- copyright -->
+        <p class="fs-7 fs-lg-6 text-gray-200">
+            Copyright&nbsp;&copy;&nbsp;FreshFarm 2025 All Rights Reserved.
+        </p>
+    </div>
+</footer>
+  </body>
+</html>
