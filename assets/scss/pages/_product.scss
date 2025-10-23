@@ -1,0 +1,57 @@
+@mixin large{
+    @media (min-width:992px){
+        @content;
+    }
+}
+
+
+.product-main{
+    height: 250px;
+    @include large{
+        height: 526px;
+    }
+
+}
+
+.product-img{
+    width: 75.75px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    @include large{
+        width:113.5px;
+        height: 100px;
+    }
+}
+.inspection-mark{
+    width: 32px;
+    height: 32px;
+    @include large{
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.farmer-img{
+    object-position: 50% 30%;
+    height: 200px;
+    @include large{
+        height: 280px;
+
+    }
+}
+
+    .my-lg-58{
+        @include large{
+        margin-top: 58px;
+        margin-bottom: 58px;
+        }
+    }
+
+
+// input 預設+- icon
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

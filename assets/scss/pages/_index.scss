@@ -1,0 +1,154 @@
+@mixin large {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+// swiper
+.pt-69{
+    padding-top: 69px;
+}
+
+.banner-1{
+    background-image: url('/assets/images/index/index-mobile-Banner-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 185px;
+    padding-bottom: 112px;
+}
+.banner-2{
+    background-image: url('/assets/images/index/index-mobile-Banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 218px;
+    padding-bottom: 112px;
+}
+.banner-3{
+    background-image: url('/assets/images/index/index-mobile-Banner-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 218px;
+    padding-bottom: 112px;
+}
+@include large {
+    .banner-1{
+        padding-top: 440px;
+        padding-bottom: 297px;
+        background-image:url('/assets/images/index/index-Banner-4.jpg')
+    }
+    .banner-2{
+        padding-top: 440px;
+        padding-bottom: 297px;
+        background-image:url('/assets/images/index/index-Banner.jpg')
+    }
+    .banner-3{
+        padding-top: 440px;
+        padding-bottom: 297px;
+        background-image:url('/assets/images/index/index-Banner-1.jpg')
+    }
+    .w-450{
+        width: 450px;
+    }
+}
+
+// indexSection-title
+.indexSection-title {
+    padding-left: 26px;
+    @include large {
+        padding-left: 34px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 6px;
+        height: 100%;
+        background-color: $primary-400;
+        border-radius: 100px;
+        @include large {
+            width: 10px;
+        }
+    }
+}
+
+// 商品分類
+.bg-wrapper {
+    background-color: rgba(239, 247, 216, 0.6);
+    @include large {
+        background-color: $body-bg;
+        padding-left: 120px;
+    }
+    .product-bk {
+        @include large {
+            background-color: rgba(239, 247, 216, 0.6);
+        }
+        .box {
+            @include large {
+                margin-left: -120px;
+            }
+        }
+    }
+    .header {
+        @include large {
+            border-top-left-radius: 200px;
+        }
+    }
+    .body {
+        @include large {
+            border-bottom-left-radius: 200px;
+        }
+    }
+}
+
+.product-categories {
+    .pc-icon {
+        width: 60px;
+        height: 60px;
+        right: 16px;
+        top: 0;
+        @include large {
+            width: 120px;
+            height: 120px;
+            top: calc(50% - 135px);
+        }
+    }
+    img {
+        border-radius: 16px;
+        @include large {
+            border-top-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+            object-fit: cover;
+            &.mirror {
+                border-top-left-radius: 16px;
+                border-top-right-radius: 60px;
+                border-bottom-right-radius: 16px;
+                border-bottom-left-radius: 60px;
+            }
+        }
+    }
+}
+
+// 小農專訪
+.interview {
+    background-image: url('/assets/images/index/index-emplate.jpg');
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+// 品牌理念
+.brand-concept {
+    background-image: url('/assets/images/index/index-mobile-Section.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include large {
+        background-image: url('/assets/images/index/index-Section.jpg');
+    }
+    .card {
+        border-radius: 24px;
+    }
+}

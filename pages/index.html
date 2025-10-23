@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshFarm | 首頁</title>
+    <link rel="icon" href="/assets/icons/freshFarm.ico">
+</head>
+
+<body>
+    <header class="position-relative">
+        <div class="position-absolute w-100 z-2">
+            <%- include('./layout/nav',{shadow:false}) -%>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper header-swiper"
+            data-aos="fade-zoom-in"
+        >
+            <div class="swiper-wrapper pt-69 pt-lg-0">
+                <div class="swiper-slide">
+                    <div class="banner-1 position-relative">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark z-1"
+                            style="--bs-bg-opacity: 0.3;">
+                        </div>
+                        <div class="container position-relative z-2">
+                            <div>
+                                <div class="d-flex flex-column flex-lg-row">
+                                    <h4 class="text-primary-100 fs-lg-1 mb-lg-4 mb-1">
+                                        FreshFarm
+                                    </h4>
+                                    <h4 class="text-white fs-lg-1 mb-3 text-nowrap">
+                                        從產地到餐桌的直線距離
+                                    </h4>
+                                </div>
+                                <h5 class="fs-lg-2 text-white mb-lg-8 mb-6">
+                                    把產地的鮮活，直送你家
+                                </h5>
+                                <div class="w-450 position-relative">
+                                    <input type="text" class="form-control  py-5 px-4" placeholder="請輸入商品名稱…"
+                                        aria-label="Search">
+                                    <span class="position-absolute end-0 m-1 py-4 px-3 top-0 material-icons bg-white"
+                                        style="cursor:pointer" id="search" style="font-size: 32px;">search
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="banner-2 position-relative">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark z-1"
+                            style="--bs-bg-opacity: 0.3;">
+                        </div>
+                        <div class="container position-relative z-2">
+                            <h4 class="fs-lg-1 text-white mb-lg-4 mb-3">
+                                與在地同行，品嚐土地的真味
+                            </h4>
+                            <h5 class="fs-lg-2 text-white mb-lg-8 mb-6">
+                                讓每一口，都有個好故事
+                            </h5>
+                            <div class="w-450 position-relative">
+                                <input type="text" class="form-control  py-5 px-4" placeholder="請輸入商品名稱…"
+                                    aria-label="Search">
+                                <span class="position-absolute end-0 m-1 py-4 px-3 top-0 material-icons bg-white"
+                                    style="cursor:pointer" id="search" style="font-size: 32px;">search
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="banner-3 position-relative">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark z-1"
+                            style="--bs-bg-opacity: 0.3;">
+                        </div>
+                        <div class="container position-relative z-2">
+                            <h4 class="fs-lg-1 text-white mb-lg-4 mb-3">
+                                今日採收，明日餐桌
+                            </h4>
+                            <h5 class="fs-lg-2 text-white mb-lg-8 mb-6">
+                                看得見的產地，吃得到的安心
+                            </h5>
+                            <div class="w-450 position-relative">
+                                <input type="text" class="form-control  py-5 px-4" placeholder="請輸入商品名稱…"
+                                    aria-label="Search">
+                                <span class="position-absolute end-0 m-1 py-4 px-3 top-0 material-icons bg-white"
+                                    style="cursor:pointer" id="search" style="font-size: 32px;">search
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- decorate -->
+        <div class="decorate position-absolute bottom-0 z-1 w-100"></div>
+    </header>
+    <main>
+        <!-- 時令直送 -->
+        <section class="container bg-body py-8 py-lg-11">
+            <!-- 時令直送輪播圖 -->
+            <div class="swiper2 position-relative">
+                <div class="d-lg-flex align-items-lg-end justify-content-lg-between mb-7 mb-lg-9"
+                data-aos="fade-up"
+                >
+                    <div class="indexSection-title position-relative mb-7 mb-lg-0">
+                        <span class="badge rounded-pill fs-6 bg-primary-300 mb-2">時令直送</span>
+                        <h2 class="fs-lg-1 fs-4 text-black mb-2">當季限定&nbsp;強力推薦</h2>
+                        <h3 class="fs-lg-5 fs-6 text-gray-400 fw-normal">支持在地，享受最新鮮的台灣味</h3>
+                    </div>
+                    <div class="d-flex">
+                        <!-- prev -->
+                        <div class="swiper-button-prev-custom mt-0 position-static w-auto h-auto text-gray-400 rounded-4 bg-gray-100 p-3 me-6"
+                            style="cursor: pointer">
+                            <span class="material-icons fs-lg-2">
+                                arrow_back
+                            </span>
+                        </div>
+                        <!-- next -->
+                        <div class="swiper-button-next-custom mt-0 position-static w-auto h-auto text-gray-400 rounded-4 bg-gray-100 p-3"
+                            style="cursor: pointer">
+                            <span class="material-icons fs-lg-2">
+                                arrow_forward
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-wrapper d-flex align-items-center"
+                data-aos="fade-up"
+                data-aos-delay="400"
+                >
+                    <!-- 嚴選大樹老欉玉荷包 -->
+                    <div class="swiper-slide">
+                        <%- include('./components/card', { farm:'', img: 'index/index-Image' , title: '嚴選大樹老欉玉荷包' ,
+                            size: '5' , content: '玉荷包、黑葉等品種在夏季上市，果肉Q彈甜中帶酸，風玉荷包、黑葉等玉荷包、黑葉等品種在夏季上市，果肉Q彈甜中帶酸，風玉荷包、黑葉等' ,
+                            price: 'NT$ 683' , discount:'NT$ 729', slash :'/', grams:'600g', showCompareButton: false })
+                            -%>
+                    </div>
+                    <!-- 有機綠竹筍(特級)4台 -->
+                    <div class="swiper-slide">
+                        <%- include('./components/card', { farm:'', img: 'index/index-Image-1' , title: '有機綠竹筍(特級)4台' ,
+                            size: '5' ,
+                            content: '夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美' ,
+                            price: 'NT$ 790' , discount:'NT$ 836', slash :'/', grams:'500g', showCompareButton: false }) -%>
+                    </div>
+                    <!-- 拉拉山洪家水蜜桃 -->
+                    <div class="swiper-slide">
+                        <%- include('./components/card', { farm:'', img: 'index/index-Image-2' , title: '拉拉山洪家水蜜桃' ,
+                            size: '5' ,
+                            content: '水蜜桃主要產於高山地區，因為氣候涼爽、日夜溫差大，使得果實能慢慢成熟，累積出豐富的甜度與香氣。其果肉細緻柔嫩，色澤粉嫩誘人，咬下一口時多汁滑順，帶有獨特的清甜芳香。'
+                            , price: 'NT$ 710' , discount:'NT$ 760', slash :'/', grams:'800g', showCompareButton: false
+                            }) -%>
+                    </div>
+                    <!-- 有機綠竹筍(特級)4台 -->
+                    <div class="swiper-slide">
+                        <%- include('./components/card', { farm:'', img: 'index/index-Image-1' , title: '有機綠竹筍(特級)4台' ,
+                            size: '5' ,
+                            content: '夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美' ,
+                            price: 'NT$ 790' , discount:'NT$ 836', slash :'/', grams:'500g', showCompareButton: false }) -%>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 商品分類 -->
+        <section class="bg-wrapper">
+            <div class="product-bk header pt-8 pb-7 pt-lg-11 pb-lg-9">
+                <div class="box">
+                    <div class="container">
+                        <div class="indexSection-title position-relative"
+                        data-aos="fade-up"
+                        >
+                            <span class="badge rounded-pill fs-6 bg-primary-300 mb-2">商品分類</span>
+                            <h2 class="fs-lg-1 fs-4 text-black mb-2">您的餐桌&nbsp;是小農最好的舞台</h2>
+                            <h3 class="fs-lg-5 fs-6 text-gray-400 fw-normal">最簡單的選擇，最純粹的美味</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-bk body pb-8 pb-lg-11">
+                <div class="box">
+                    <div class="container">                    
+                        <div class="card bg-transparent border-0 product-categories">
+                            <!-- 當季蔬果 -->
+                            <div class="row align-items-lg-center mb-6 mb-lg-14"
+                            data-aos="fade-up"
+                            data-aos-delay="400"
+                            >
+                                <div class="col-md-6">
+                                    <a href="#" class="image-link-fade">
+                                        <picture>
+                                            <source srcset="/assets/images/index/index-Image-3.jpg" media="(min-width: 992px)">
+                                            <img src="/assets/images/index/index-mobile-Image-3.jpg" alt="當季蔬果"
+                                                class="img-fluid mb-3 mb-lg-0">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="col-md-5 offset-lg-1">
+                                    <div class="card-body position-relative p-2 p-lg-4">
+                                        <h4 class="card-title fs-lg-2 text-primary-400 mb-1">當季蔬果</h4>
+                                        <h6 class="card-text fs-lg-5 mb-3 mb-lg-6">
+                                            <small class="text-gray-300">In Season</small>
+                                        </h6>
+                                        <p class="card-text fs-lg-5">
+                                            從春日的翠綠葉菜到夏日的甜美瓜果，從秋季的豐收根莖到冬日的溫暖果實，我們與全台堅持友善耕作的小農合作，確保每一口都是當令的鮮甜與營養。</p>
+                                        <img src="/assets/images/index/index-apple.png" alt="當季蔬果"
+                                            class="position-absolute z-2 pc-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 現撈海鮮 -->
+                            <div class="row align-items-lg-center mb-6 mb-lg-14"
+                            data-aos="fade-up"
+                            data-aos-delay="500"
+                            >
+                                <div class="col-md-6 order-lg-2 offset-lg-1">
+                                    <a href="#" class="image-link-fade">
+                                        <picture>
+                                            <source srcset="/assets/images/index/index-Image-5.jpg" media="(min-width: 992px)">
+                                            <img src="/assets/images/index/index-mobile-Image-5.jpg" alt="現撈海鮮"
+                                                class="img-fluid mb-3 mb-lg-0 mirror">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="col-md-5 order-lg-1">
+                                    <div class="card-body position-relative p-2 p-lg-4">
+                                        <h4 class="card-title fs-lg-2 text-primary-400 mb-1">現撈海鮮</h4>
+                                        <h6 class="card-text fs-lg-5 mb-3 mb-lg-6">
+                                            <small class="text-gray-300">Fresh Catch</small>
+                                        </h6>
+                                        <p class="card-text fs-lg-5">
+                                            我們與在地漁民緊密合作，確保每一隻蝦都是當日現撈，並以最嚴謹的保鮮技術，鎖住最原始的海洋風味。每項商品都附有詳細的捕撈日期、產地資訊與檢驗報告，讓您吃得安心又放心。
+                                        </p>
+                                        <img src="/assets/images/index/index-ezoiwana.png" alt="現撈海鮮"
+                                            class="position-absolute z-2 pc-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 優質肉蛋 -->
+                            <div class="row align-items-lg-center mb-6 mb-lg-14"
+                            data-aos="fade-up"
+                            data-aos-delay="600"
+                            >
+                                <div class="col-md-6">
+                                    <a href="#" class="image-link-fade">
+                                        <picture>
+                                            <source srcset="/assets/images/index/index-Image-4.jpg" media="(min-width: 992px)">
+                                            <img src="/assets/images/index/index-mobile-Image-4.jpg" alt="優質肉蛋"
+                                                class="img-fluid mb-3 mb-lg-0">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="col-md-5 offset-lg-1">
+                                    <div class="card-body position-relative p-2 p-lg-4">
+                                        <h4 class="card-title fs-lg-2 text-primary-400 mb-1">優質肉蛋</h4>
+                                        <h6 class="card-text fs-lg-5 mb-3 mb-lg-6">
+                                            <small class="text-gray-300">Prime Cuts</small>
+                                        </h6>
+                                        <p class="card-text fs-lg-5">
+                                            從口感鮮美的自然豬肉、肉質紮實的放山雞，到營養豐富的機能蛋，我們確保每一份肉品與蛋品都符合嚴格的品質標準。您可以透過平台追溯飼養環境、飼料來源以及相關認證。</p>
+                                        <img src="/assets/images/index/index-egg.png" alt="優質肉蛋"
+                                            class="position-absolute z-2 pc-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 在地加工品 -->
+                            <div class="row align-items-lg-center"
+                            data-aos="fade-up"
+                            data-aos-delay="700"
+                            >
+                                <div class="col-md-6 order-lg-2 offset-lg-1">
+                                    <a href="#" class="image-link-fade">
+                                        <picture>
+                                            <source srcset="/assets/images/index/index-Image-6.jpg" media="(min-width: 992px)">
+                                            <img src="/assets/images/index/index-mobile-Image-6.jpg" alt="在地加工品"
+                                                class="img-fluid mb-3 mb-lg-0 mirror">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="col-md-5 order-lg-1">
+                                    <div class="card-body position-relative p-2 p-lg-4">
+                                        <h4 class="card-title fs-lg-2 text-primary-400 mb-1">在地加工品</h4>
+                                        <h6 class="card-text fs-lg-5 mb-3 mb-lg-6">
+                                            <small class="text-gray-300">Local Picks</small>
+                                        </h6>
+                                        <p class="card-text fs-lg-5">
+                                            從手工熬煮的天然果醬、陽光曬製的健康果乾，到遵循古法製作的在地米麵、特色醬料，每一項產品都來自在地小農的用心。您可以深入了解製作過程、原料來源與品牌故事，感受產品背後的溫度與堅持。
+                                        </p>
+                                        <img src="/assets/images/index/index-tsukemono.png" alt="在地加工品"
+                                            class="position-absolute z-2 pc-icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 小農專訪 -->
+        <section class="interview position-relative">
+            <%- include('./components/decorate.ejs'); -%>
+                <div class="container py-8 py-lg-13">
+                    <div class="indexSection-title position-relative mb-7 mb-lg-9"
+                    data-aos="fade-up"
+                    >
+                        <span class="badge rounded-pill fs-6 bg-primary-300 mb-2">小農專訪</span>
+                        <h2 class="fs-lg-1 fs-4 text-black mb-2">探尋台灣風土的真摯感動</h2>
+                        <h3 class="fs-lg-5 fs-6 text-gray-400 fw-normal">聆聽小農心聲，故事與新鮮同行</h3>
+                    </div>
+                    <div class="row mb-4 mb-lg-14">
+                        <div class="col-md-4 align-self-md-center"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                        >
+                            <picture>
+                                <source srcset="/assets/images/index/index-Image-7.jpg" media="(min-width: 992px)">
+                                <img src="/assets/images/index/index-mobile-Image-7.jpg" alt="小農專訪"
+                                    class="img-fluid mb-3 mb-lg-0 rounded-3">
+                            </picture>
+                        </div>
+                        <div class="col-md-7 offset-lg-1"
+                        data-aos="fade-up"
+                        data-aos-delay="500"
+                        >
+                            <div class="card-body p-4">
+                                <h6 class="card-text fs-lg-4 mb-1 mb-lg-2">
+                                    <small class="text-primary-400">海港的堅持</small>
+                                </h6>
+                                <h5 class="card-title fs-lg-2 mb-3 mb-lg-6">阿海的現撈野生軟絲</h5>
+                                <p class="card-text fs-lg-5">
+                                    清晨四點，天色微亮，阿海哥的漁船已經破浪而出。身為一名資深漁民，他深知大海的脾氣與慷慨。阿海哥堅持以一支釣或定置網等友善漁法捕撈，不過度捕撈，只為維護海洋生態的永續。他說：「我們只捕當季、當令的魚貨，當天捕上岸的野生軟絲，眼睛清澈、肉質Q彈，那才是真正的鮮。」當他將一箱箱閃著銀光的現撈漁獲送上岸，你就能感受到那份來自大海，最新鮮、最有活力的生命力。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- 為何選擇 FreshFarm -->
+        <section class="brand-concept position-relative">
+            <%- include('./components/decorate.ejs'); -%>
+                <div class="container py-8 py-lg-13">
+                    <div class="indexSection-title position-relative mb-7 mb-lg-9"
+                    data-aos="fade-up"
+                    >
+                        <span class="badge rounded-pill fs-6 bg-primary-300 mb-2">品牌理念</span>
+                        <h2 class="fs-lg-1 fs-4 text-black mb-2">為何選擇&nbsp;FreshFarm</h2>
+                        <h3 class="fs-lg-5 fs-6 text-gray-400 fw-normal">從產地到餐桌，選擇一份安心與用心</h3>
+                    </div>
+                    <div class="row row-cols-1 row-cols-lg-3 g-4">
+                        <div class="col"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                        >
+                            <div class="card h-100 mb-6 mb-lg-0 border-0 p-6">
+                                <picture class="text-center mb-6">
+                                    <img src="/assets/images/index/index-vacuumcar.png" alt="產地直送的極致新鮮">
+                                </picture>
+                                <div class="card-body p-0 text-center">
+                                    <h5 class="card-title text-primary-400 mb-4">產地直送的極致新鮮</h5>
+                                    <p class="card-text text-gray-400">我們直接從產地將食材送到您手中，確保您享用的是最當季、最新鮮的美味。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col"
+                        data-aos="fade-up"
+                        data-aos-delay="500"
+                        >
+                            <div class="card h-100 mb-6 mb-lg-0 border-0 p-6">
+                                <picture class="text-center mb-6">
+                                    <img src="/assets/images/index/index-vegetableset.png" alt="安心透明的食材來源">
+                                </picture>
+                                <div class="card-body p-0 text-center">
+                                    <h5 class="card-title text-primary-400 mb-4">安心透明的食材來源</h5>
+                                    <p class="card-text text-gray-400">每一項商品都有清楚產地故事、農友介紹與完整認證資訊，讓您吃得安心又放心。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col"
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                        >
+                            <div class="card h-100 mb-6 mb-lg-0 border-0 p-6">
+                                <picture class="text-center mb-6">
+                                    <img src="/assets/images/index/index-compost.png" alt="在地小農與永續農業">
+                                </picture>
+                                <div class="card-body p-0 text-center">
+                                    <h5 class="card-title text-primary-400 mb-4">在地小農與永續農業</h5>
+                                    <p class="card-text text-gray-400">您的每一次消費，都直接幫助辛勤耕耘的在地農友促進台灣農業的永續發。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+        <script type="module" src="../main.js"></script>
+</body>
+
+</html>

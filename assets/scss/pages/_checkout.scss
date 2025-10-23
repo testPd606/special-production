@@ -1,0 +1,152 @@
+@mixin large {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+// 按鈕
+.checkout-btn {
+  padding: 16px 24px;
+  background-color: $primary-300;
+  color: $white;
+  border-radius: 8px;
+  font-weight: 700;
+  line-height: 1.2;
+  flex-wrap: nowrap;
+  border: none;
+}
+
+.checkout-btn:hover {
+  background-color: $primary-200;
+  color: $white;
+}
+
+// 購物車區塊
+.cart-bg {
+  background-color: $white;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0px 4px 80px rgba(178, 178, 178, 0.2);
+  @include large {
+    padding: 20px;
+  }
+}
+
+// 進度條
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 32px 4px;
+
+  @include large {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+.step-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid $primary-400;
+  color: $primary-400;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.active {
+    background-color: $primary-400;
+    color: $white;
+  }
+
+  @include large {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.step-text {
+  margin-top: 8px;
+  color: $primary-400;
+  font-size: 12px;
+  font-weight: 700;
+  @include large {
+    margin-top: 12px;
+    font-size: 16px;
+  }
+}
+
+.step-line {
+  height: 1px;
+  background-color: $primary-400;
+  width: 49px;
+  margin: 0 8px;
+  @include large {
+    width: 72px;
+  }
+}
+
+// 表格
+.table {
+  margin: 0;
+
+  td,
+  th {
+    background-color: $white;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  td {
+    padding: 24px 12px;
+  }
+
+  th[scope="col"] {
+    background-color: $secondary-50;
+    font-weight: 700;
+    color: $gray-400;
+    padding: 12px;
+  }
+
+  th[scope="row"] {
+    text-align: left;
+    color: $gray-400;
+    font-weight: 400;
+  }
+}
+
+thead tr th:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+thead tr th:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+//垃圾桶
+.delete {
+  background-color: $gray-100;
+  border-radius: 8px;
+  color: $danger;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+input.form-control[type="number"] {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}

@@ -1,0 +1,38 @@
+.header-swiper {
+    > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {        
+        bottom: 44px;
+        @media (min-width: 992px) {
+            bottom: 108px;
+        }
+    }
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background-color: $white;
+        opacity: .5;
+        @media (min-width: 992px) {
+            width: 12px;
+            height: 12px;
+        }
+        &.swiper-pagination-bullet-active {
+            background-color: $white;
+            opacity: 1;
+        }
+    }
+}
+
+// swiper2
+.swiper2 {
+    max-width: 1290px;
+    overflow: visible;
+    overflow-x: clip;
+    .card-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-clamp: 2;
+        overflow: hidden;
+        word-break: break-all;
+    }
+}

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshFarm | 產地直送</title>
+  <link rel="icon" href="/assets/icons/freshFarm.ico">
+</head>
+
+<body>
+  <%- include('./layout/nav',{shadow:true}); -%>
+  
+  <main>
+    <!-- 商品list -->
+    <section class="container py-8 py-lg-9">
+      <div class="row">
+        <!-- 分類欄 -->
+        <div class="col-lg-3">
+          <!-- 電腦樣式 -->
+          <div class="d-none d-lg-block">
+            <h1 class="fs-lg-4 pb-lg-12 border-1 border-primary-200 border-bottom">商品分類</h1>
+            <ul class="nav flex-column">
+              <li class="nav-item border-1 border-primary-200 border-bottom">
+                <a class="nav-link fs-5 classify py-3" aria-current="page" href="#">所有商品</a>
+              </li>
+              <div class="accordion" id="accordionExample">
+                <!-- 產地類別 -->
+                <div class="accordion-item border-0">
+                  <div class="accordion-header" id="headingOne">
+                    <button class="accordion-button fs-5 classify border-1 border-primary-200 rounded-0 border-bottom px-3 d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      產地
+                      <span class="material-icons text-primary arrow-down">keyboard_arrow_down</span>
+                    </button>
+                  </div>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body bg-primary-100 p-0">
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-black px-4 py-3" href="#">北部</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-black px-4 py-3" href="#">中部</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-black px-4 py-3" href="#">南部</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-black px-4 py-3" href="#">東部</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-black px-4 py-3" href="#">離島</a>
+                        </li>                        
+                      </ul>                      
+                    </div>
+                  </div>
+                </div>
+                <!-- 季節類別-->
+                <div class="accordion-item border-0">
+                  <div class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed fs-5 classify border-1 border-primary-200 rounded-0 border-bottom px-3 d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      季節
+                      <span class="material-icons text-primary arrow-down">keyboard_arrow_down</span>
+                    </button>                      
+                  </div>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body bg-primary-100 p-0">
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-black px-4 py-3" href="#">春季(3~5月)</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-black px-4 py-3" href="#">夏季(6~8月)</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-black px-4 py-3" href="#">秋季(9~11月)</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-black px-4 py-3" href="#">冬季(12~2月)</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-black px-4 py-3" href="#">全年</a>
+                        </li>                        
+                      </ul>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <li class="nav-item border-1 border-bottom border-primary-200">
+                <a class="nav-link fs-5 classify px-3 py-4" href="#">有機認證</a>
+              </li>
+            </ul> 
+          </div>
+         
+          <!-- 手機樣式 -->
+          <div class="dropdown d-lg-none d-block" data-bs-auto-close="outside">
+            <a class="btn w-100 border-gray-200 border-2 text-gray-300 dropdown-toggle mb-4 d-flex justify-content-between align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              商品分類
+              <span class="material-icons text-primary">keyboard_arrow_down</span>
+            </a>
+          
+            <ul class="dropdown-menu mt-1 p-4 flex-column w-100 border-1 border-primary-200 bg-white rounded-3" aria-labelledby="dropdownMenuLink">                   
+              <li class="nav-item mb-2">
+                <a class="nav-link fs-6 classify p-1" aria-current="page" href="#">所有商品</a>
+              </li>
+              <div class="accordion" id="accordionExample">
+                <!-- 產地類別 -->
+                <div class="accordion-item border-0 mb-2">
+                  <div class="accordion-header" id="headingOne">
+                    <button class="accordion-button fs-6 classify rounded-0 p-1 mb-1 justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      產地
+                      <span class="material-icons text-primary arrow-down">keyboard_arrow_down</span>
+                    </button>
+                  </div>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-primary px-4 py-2" href="#">北部</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-primary px-4 py-2" href="#">中部</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-primary px-4 py-2" href="#">南部</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-primary px-4 py-2" href="#">東部</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-primary px-4 py-2" href="#">離島</a>
+                        </li>                        
+                      </ul>                      
+                    </div>
+                  </div>
+                </div>
+                <!-- 季節類別-->
+                <div class="accordion-item border-0 mb-2">
+                  <div class="accordion-header" id="headingTwo">
+                    <button class="accordion-button fs-6 classify rounded-0 p-1 mb-1 justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      季節
+                      <span class="material-icons text-primary arrow-down">keyboard_arrow_down</span>
+                    </button>                      
+                  </div>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-primary px-4 py-2" href="#">春季(3~5月)</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-primary px-4 py-2" href="#">夏季(6~8月)</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-primary px-4 py-2" href="#">秋季(9~11月)</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-primary px-4 py-2" href="#">冬季(12~2月)</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link classify-subitem text-primary px-4 py-2" href="#">全年</a>
+                        </li>                        
+                      </ul>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link fs-6 classify p-1" href="#">有機認證</a>
+              </li>
+            </ul> 
+          </div>
+        </div>
+
+        <div class="col-lg-9">
+          <!-- 商品搜尋欄 -->
+          <div class="position-relative mb-7 mb-lg-8">
+            <input type="text" class="form-control shadow-none" placeholder="搜尋商品名稱">
+            <span class="material-icons position-absolute text-primary product-search-bar align-bottom">search</span>
+          </div>          
+          <!-- 商品list -->          
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-xxl-3 mb-8">
+            <div class="col mb-6 mb-xxl-7 d-flex justify-content-center">
+              <%- include('./components/card',
+                {
+                farm:'麻豆柚香園',
+                img: 'product/product-image-麻豆柚子',
+                title: '麻豆大白柚',
+                size: '5',
+                content: '來自台南麻豆的優質大白柚，果肉飽滿、汁多清甜、微酸爽口，天然無毒栽培，皮薄肉厚，每一口都吃得到自然的好味道。中秋送禮、自用兩相宜，讓您品嚐最純粹的台灣在地風味。',
+                price: 'NT$ 950',
+                discount:'NT$ 1060',
+                slash :'/',
+                grams:'6公斤裝',
+                showCompareButton: true }) -%>                                                     
+            </div>            
+            <div class="col mb-6 mb-xxl-7 d-flex justify-content-center">
+              <%- include('./components/card',
+                {
+                farm:'古樂農場',
+                img: 'product/product-image-荔枝',
+                title: '嚴選大樹老欉玉荷包',
+                size: '5',
+                content: '玉荷包、黑葉等品種在夏季上市，果肉Q彈甜中帶酸，風玉荷包、黑葉等玉荷包、黑葉等品種在夏季上市，果肉Q彈甜中帶酸，風玉荷包、黑葉等',
+                price: 'NT$ 683',
+                discount:'NT$ 729',
+                slash :'/',
+                grams:'600g',
+                showCompareButton: true }) -%>                                                     
+            </div>
+            <div class="col mb-6 mb-xxl-7 d-flex justify-content-center">
+              <%- include('./components/card',
+                {
+                farm:'農芒',
+                img: 'product/product-image-綠竹筍',
+                title: '有機綠竹筍(特級)4台',
+                size: '5',
+                content: '夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美',
+                price: 'NT$ 790',
+                discount:'',
+                slash :'/',
+                grams:'500g',
+                showCompareButton: true }) -%>                                                     
+            </div>
+            <div class="col mb-6 mb-xxl-7 d-flex justify-content-center">
+              <%- include('./components/card',
+                {
+                farm:'無花果農場',
+                img: 'product/product-image-水蜜桃',
+                title: '拉拉山洪家水蜜桃',
+                size: '5',
+                content: '水蜜桃主要產於高山地區，因為氣候涼爽、日夜溫差大，使得果實能慢慢成熟，累積出豐富的甜度與香氣。其果肉細緻柔嫩，色澤粉嫩誘人，咬下一口時多汁滑順，帶有獨特的清甜芳香。',
+                price: 'NT$ 710',
+                discount:'NT$ 760',
+                slash :'/',
+                grams:'800g',
+                showCompareButton: true }) -%>                                                     
+            </div>
+            <div class="col mb-6 mb-xxl-7 d-flex justify-content-center d-none">
+              <%- include('./components/card',
+                {
+                farm:'紅奇有機農場',
+                img: 'product/product-image-青花菜',
+                title: '無毒青花菜',
+                size: '5',
+                content: '清脆鮮甜，適合快炒或川燙，富含膳食纖維',
+                price: 'NT$ 79',
+                discount:'',
+                slash :'/',
+                grams:'300g',
+                showCompareButton: true }) -%>                                                     
+            </div>
+            <div class="col mb-6 mb-xxl-7 d-flex justify-content-center">
+              <%- include('./components/card',
+                {
+                farm:'竹塘鄉農會',
+                img: 'product/product-image-豬肉片',
+                title: '黑豬梅花火鍋片',
+                size: '5',
+                content: '油花均勻、口感滑嫩，火鍋與炒菜皆適宜',
+                price: 'NT$ 468',
+                discount:'',
+                slash :'/',
+                grams:'300g',
+                showCompareButton: true }) -%>                                                     
+            </div>
+            <div class="col mb-6 mb-xxl-7 d-flex justify-content-center">
+              <%- include('./components/card',
+                {
+                farm:'古樂農場',
+                img: 'product/product-image-香米',
+                title: '屏東香米',
+                size: '5',
+                content: '口感Q彈、米香濃，是每日主食的安心選擇',
+                price: 'NT$ 103',
+                discount:'NT$ 115',
+                slash :'/',
+                grams:'1,500g',
+                showCompareButton: true }) -%>                                                     
+            </div>
+            <div class="col mb-6 mb-xxl-0 d-flex justify-content-center">
+              <%- include('./components/card',
+                {
+                farm:'以拉西代',
+                img: 'product/product-image-放牧土雞蛋',
+                title: '放牧土雞蛋',
+                size: '5',
+                content: '蛋黃濃郁自然橘紅，無抗生素殘留',
+                price: 'NT$ 115',
+                discount:'NT$ 130',
+                slash :'/',
+                grams:'10顆',
+                showCompareButton: true }) -%>                                                     
+            </div>
+            <div class="col mb-6 mb-xxl-0 d-flex justify-content-center">
+              <%- include('./components/card',
+                {
+                farm:'AphineBro高山兄弟',
+                img: 'product/product-image-牛番茄',
+                title: '牛番茄（大果）',
+                size: '5',
+                content: '多汁微酸，適合涼拌、燉煮',
+                price: 'NT$ 142',
+                discount:'',
+                slash :'/',
+                grams:'500g',
+                showCompareButton: true }) -%>                                                     
+            </div>
+            <div class="col mb-6 mb-xxl-0 d-flex justify-content-center">
+              <%- include('./components/card',
+                {
+                farm:'保證責任雲林縣永光果菜生產合作社',
+                img: 'product/product-image-高麗菜',
+                title: '小農高麗菜',
+                size: '5',
+                content: '脆甜飽滿，適合清炒、煮湯、滷煮',
+                price: 'NT$ 79',
+                discount:'',
+                slash :'/',
+                grams:'1,000g',
+                showCompareButton: true }) -%>                                                     
+            </div>
+          </div>  
+          <!-- 分頁 -->
+          <div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item me-3">
+                  <a class="page-link shadow-none pagination-page border-0 d-flex justify-content-center" href="#" aria-label="Previous">
+                    <span class="material-icons">keyboard_arrow_left</span>
+                  </a>
+                </li>
+                <li class="page-item active me-2" aria-current="page">
+                  <a class="page-link shadow-none pagination-page agination rounded-circle border-0 py-1 px-2 text-center" href="#">1</a>
+                </li>
+                <li class="page-item me-2">
+                  <a class="page-link shadow-none pagination-page agination rounded-circle border-0 py-1 px-2 text-center" href="#">2</a>
+                </li>
+                <li class="page-item me-3">
+                  <a class="page-link shadow-none pagination-page agination rounded-circle border-0 py-1 px-2 text-center" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link shadow-none pagination-page border-0 d-flex justify-content-center" href="#" aria-label="Next">
+                    <span class="material-icons">keyboard_arrow_right</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('./layout/compare',{nonCompare: false, showCompareArea: true}) -%>    
+  </main>
+    
+  <%- include('./layout/footer'); -%>
+
+  
+  <script>
+    // 防止點擊 dropdown 裡面的 accordion 按鈕時，dropdown 被 Bootstrap 關閉
+    document.querySelectorAll('.dropdown-menu .accordion-button').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation(); // 阻止事件往上傳，避免 Bootstrap dropdown 關閉
+      });
+    });
+  </script>
+
+  <script type="module" src="../main.js"></script>
+</body>
+
+</html>

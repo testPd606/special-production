@@ -1,0 +1,24 @@
+@import 'bootstrap/scss/functions';
+@import './helpers/variables';
+@import './helpers/variables-dark';
+@import 'bootstrap/scss/bootstrap';
+
+@import './utilities/utilities';
+@import './base/base';
+
+@import '../icons/icon';
+
+@import './components/animations';
+@import './components/card';
+@import './components/swiper';
+@import './components/decorate';
+@import './layout/header';
+@import './layout/nav';
+@import './layout/footer';
+@import './layout/compare';
+
+
+@import './pages/index';
+@import './pages/product';
+@import './pages/product-list';
+@import './pages/checkout';

@@ -1,0 +1,15 @@
+// 裝飾
+.decorate {
+    height: 20px;
+    background-image: url('/assets/images/index/index-mobile-Wave-1.png');
+    background-position: center;
+    background-repeat: repeat-x;
+    transform: translateY(0);
+    @media (min-width: 996px) {
+        background-image: url('/assets/images/index/index-Wave-1.png');
+        height: 60px;
+    }
+    &.top {
+        transform: scaleY(-1);
+    }
+}

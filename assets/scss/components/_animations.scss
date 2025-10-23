@@ -1,0 +1,8 @@
+// 滑鼠滑入圖片淡入淡出效果
+.image-link-fade {  
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-link-fade:hover {
+  opacity: 0.7;
+}

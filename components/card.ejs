@@ -1,0 +1,71 @@
+<div class="card product-card border-0 h-100 w-100 position-relative" style="max-width: 416px;">
+    <div class="position-relative">
+        <a href="#" type="button"
+            class="certify-link fw-medium position-absolute top-0  badge rounded-pill bg-primary-100
+            text-primary fs-6 m-4 px-2 py-1 d-flex justify-content-center align-items-center"
+            >
+            <img class="me-1" src="/assets/icons/leaf-icon.png" alt="安心認證icon圖示">
+            安心認證
+        </a>
+        <img src='/assets/images/<%= img %>.jpg' class="card-img-top" alt="商品圖片">
+        <button type="button" class="position-absolute bottom-0 end-0 border-0 rounded-circle bg-white p-3 m-4"
+            onclick="toggleFavorite(this)">
+            <span class="material-icons fs-2 d-block favorite-icon text-gray-400">favorite_border</span>
+        </button>
+    </div>
+
+    <div class="card-body d-flex flex-column">
+        <h6 class="text-primary-400 mb-1">
+            <%= farm %>
+        </h6>
+        <h5 class="card-title fs-lg-<%= size %> text-truncate">
+            <%= title %>
+        </h5>
+        <a href="product.html" class="card-text text-gray-300 multi-line-truncate mb-3 stretched-link">
+            <%= content %>
+        </a>
+        <div class="mb-3 mt-auto">
+            <span class=" fs-5 fw-bold text-secondary-300 ">
+                <%= price %>
+            </span>
+            <del class="text-gray-300  ms-2">
+                <%= discount %>
+            </del>
+            <span class="mx-1 text-gray-300 ">
+                <%= slash %>
+            </span>
+            <span class="text-gray-300 ">
+                <%= grams %>
+            </span>
+        </div>
+
+
+        <div class="d-flex gap-3">
+            <% if (showCompareButton) { %>
+                <button type="button"
+                    class="btn btn-gray-100 border border-gray-200 text-black fw-bold  px-6">加入比較</button>
+                <% } %>
+
+                <button type="button" class="btn btn-primary-300 text-white fw-bold flex-grow-1">加入購物車</button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    /* 切換愛心JS */
+    function toggleFavorite(button) {
+        const icon = button.querySelector('.favorite-icon');
+        const current = icon.textContent.trim();
+
+        if (current === 'favorite_border') {
+            icon.textContent = 'favorite';
+            icon.classList.remove('text-gray-400');
+            icon.classList.add('text-secondary-300');
+        } else {
+            icon.textContent = 'favorite_border';
+            icon.classList.remove('text-secondary-300');
+            icon.classList.add('text-gray-400');
+        }
+    }
+</script>
